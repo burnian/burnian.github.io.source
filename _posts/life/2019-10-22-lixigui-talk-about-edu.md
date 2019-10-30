@@ -1,10 +1,11 @@
 ---
 title: 李希贵校长谈教育
-categories: life
 tags: [李希贵, 教育]
 image: https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=ff07047848a7d933aba5ec21cc22ba76/8b82b9014a90f6038339a22b3312b31bb151edd5.jpg
 description: 最近看了北京十一总校校长李希贵先生关于教育的四点探讨，感触很深，只能说现在的学生真是太幸运了，中国的教育正在朝着正确的方向发展，社会的整体结构将会因为教育的优化而变得更加丰富，稳固。
 ---
+* TOC
+{:toc}
 
 最近看了北京十一总校校长[李希贵][1]先生关于教育的四点探讨，感触很深，只能说现在的学生真是太幸运了，中国的教育正在朝着正确的方向发展，社会的整体结构将会因为教育的优化而变得更加丰富，稳固。以下就是李希贵先生的观点，记录如下：
 
@@ -143,7 +144,7 @@ description: 最近看了北京十一总校校长李希贵先生关于教育的�
 
 ![Teresa-profile](http://pzn1a9240.bkt.clouddn.com/640.webp)
 
-### References
+### 引用
 
 [罗辑思维：关于教育的真相，这位校长只用四个问题就讲透了][2]
 

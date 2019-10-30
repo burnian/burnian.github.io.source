@@ -18,13 +18,11 @@ jekyll: https://jekyllrb.com
 github: https://github.com/burnian
 # Publish posts or collection documents with a future date.
 future: false
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
 
 
 # markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# 现在不需要设置markdown的渲染方式了，因为jekyll 3.0以上版本默认使用
+# kramdown来渲染markdown并使用rouge来高亮代码，我们需要做的只是修改css
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 # markdown: kramdown
 # kramdown:
@@ -48,20 +46,36 @@ gitalk:
 paginate: 5
 paginate_paths: ["pages/:num", "pages/fiction/:num", "pages/travel/:num", "pages/life/:num", "pages/technology/:num"]
 
-collections:
-  posts:
-    output: true # 只有posts的output默认是true的，其他collection文件夹不是
+# collections:
+#   posts:
+#     output: true # 只有posts的output默认是true的，其他collection文件夹不是
 
 defaults:
   - scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "_posts/fiction"
+    values:
+      categories: "fiction"
+  - scope:
+      path: "_posts/travel"
+    values:
+      categories: "travel"
+  - scope:
+      path: "_posts/life"
+    values:
+      categories: "life"
+  - scope:
+      path: "_posts/technology"
+    values:
+      categories: "technology"
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Baidu Analytics
 baidu:

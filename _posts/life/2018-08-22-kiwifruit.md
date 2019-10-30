@@ -1,5 +1,4 @@
 ---
-categories: life
 language: English
 tags: ddd
 ---

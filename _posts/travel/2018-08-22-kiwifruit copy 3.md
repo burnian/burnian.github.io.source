@@ -1,5 +1,4 @@
 ---
-categories: travel
 language: English
 tags: ddd
 ---

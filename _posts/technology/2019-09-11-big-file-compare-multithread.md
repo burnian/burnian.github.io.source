@@ -1,6 +1,5 @@
 ---
 title: 大文件内容对比多线程版本
-categories: technology
 tags: Seattle kkk Spokane
 ---
 * TOC
@@ -25,7 +24,7 @@ this.threadPoolExecutor = new ThreadPoolExecutor(8, 8, 10L, TimeUnit.SECONDS,
 # 线程池消费拆分任务
 
 ~~~java
-List<Future<Chunk>> splitFutureList = new ArrayList<>();
+List<Future<Chunk>> splitFutureList = new ArrayList<>();// this is just a block of testing code.
 while (true){
     line = br.readLine();
     if(line != null){

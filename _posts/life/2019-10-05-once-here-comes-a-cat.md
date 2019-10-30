@@ -1,6 +1,5 @@
 ---
 title: 从前有一只猫
-categories: life
 tags: [猫, 情感]
 ---
 # 楔子：猫<br>
