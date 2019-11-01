@@ -14,16 +14,16 @@ tags: Seattle kkk Spokane
 
 # 线程池
 
-~~~java
+{% highlight java linenos %}
 this.threadPoolExecutor = new ThreadPoolExecutor(8, 8, 10L, TimeUnit.SECONDS,
     new LinkedBlockingQueue<>(8),
     new CustomizableThreadFactory("fileSorterTPE-"),
     new ThreadPoolExecutor.CallerRunsPolicy());
-~~~
+{% endhighlight %}
 
 # 线程池消费拆分任务
 
-~~~java
+{% highlight java linenos %}
 List<Future<Chunk>> splitFutureList = new ArrayList<>();// this is just a block of testing code.
 while (true){
     line = br.readLine();
@@ -48,12 +48,12 @@ while (true){
     }
 }
 chunkList = splitFutureList.stream().map(this::get).collect(Collectors.toList());
-~~~
+{% endhighlight %}
 
 
 # 线程池消费合并任务
 
-~~~java
+{% highlight java linenos %}
 int currentLevel = INITIAL_CHUNK_LEVEL;
 List<Future<Chunk>> mergeFutureList = new ArrayList<>();
 while (true) {
@@ -74,7 +74,7 @@ while (true) {
     Future<Chunk> chunk = threadPoolExecutor.submit(() -> merge(pollChunks, original));
     mergeFutureList.add(chunk);
 }
-~~~
+{% endhighlight %}
 
 可以看到合并任务与拆分任务有些不同，拆分任务是在循环退出后才执行`Future.get`，因为拆分不用考虑先后；
 而合并任务在每次获取当前阶段的chunk结束时执行`Future.get`，这样才能避免不同的阶段之间产生混乱。

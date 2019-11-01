@@ -60,6 +60,25 @@
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
 }
 
+.post a {
+    text-decoration: none;
+    transition: all .5s;
+
+    &:hover {
+        color: #FFF;
+        background: #007BFF;
+    }
+
+    &:active {
+        color: #FFF;
+        background: #007BFF;
+    }
+}
+
+.post .footnotes {
+    color: #6c757d
+}
+
 /**
  * Blockquotes
  */
