@@ -2,7 +2,7 @@
 title: （一）从零开始搭建个人静态博客网站
 tags: 个人网站 Jekyll
 image: http://pzn1a9240.bkt.clouddn.com/cover.jpg
-description: 从零开始的起始篇，该篇主要介绍环境的搭建
+description: 从零开始的起始篇，该篇主要介绍环境的搭建步骤：1.下载带Devkit的Ruby安装包；2.安装；3.安装Jekyll和bundler；4.创建你的第一个jekyll默认网站项目并运行。
 ---
 * TOC
 {:toc}

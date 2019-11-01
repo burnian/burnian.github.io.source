@@ -2,7 +2,7 @@
 title: （二）从零开始搭建个人静态博客网站
 tags: 个人网站 Jekyll
 image: http://pzn1a9240.bkt.clouddn.com/cover.jpg
-description: 该篇主要介绍如何把本地代码部署到github上去，并学会配置Github Pages
+description: 这一章我们将要学习的是如何把本地代码部署到网站托管平台GitHub上去。
 ---
 * TOC
 {:toc}
