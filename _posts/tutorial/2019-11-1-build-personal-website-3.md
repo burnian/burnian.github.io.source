@@ -1,7 +1,7 @@
 ---
 title: （三）从零开始搭建个人静态博客网站
 tags: 个人网站 Jekyll
-image: https://wx4.sinaimg.cn/mw690/6fbea8e9ly1g8kv72h9caj20fk0fk41s.jpg
+image: https://i.loli.net/2019/11/04/Vk6w24jRNMKpiOf.jpg
 description: 这一章我们将展开学习利用 Jekyll + GitHub Pages 搭建个人网站时会频繁用到的相关知识。
 ---
 * TOC
@@ -43,25 +43,56 @@ description: 这一章我们将展开学习利用 Jekyll + GitHub Pages 搭建�
 
 ## Jekyll 是什么
 
-Jekyll 是一种用 Ruby 语言开发的静态网页生成系统，我们的网站就是由它生成的。Jekyll 可以识别的文件中既能有语句又能有HTML（称为超文本标记语言，是一种标识性的语言。文件后缀通常为.html）语句。
+Jekyll 是一个原生支持 GitHub Pages 且创建流程简单的静态网站生成系统，能够识别 Markdown[^Markdown] 和 HTML[^HTML] 文件，并根据你的布局生成一个完全静态的网站。Jekyll 还支持 Markdown 和 Liquid 语法。我们的网站就是以 Jekyll + GitHub Pages 为核心来支撑的。
 
-## Markdown 是什么
+## Liquid 是什么
 
-Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，文件后缀通常为.md或.markdown。其使用方法参见`https://www.zybuluo.com/mdeditor`
+[Liquid][8]由 Shopify 创造并用 Ruby 实现。它既是一门开源的标记语言，又是一个安全且面向用户的灵活网页应用模板引擎。其代码可分为对象（object）、标记（tag）和过滤器（filter）。我们不用记那么多，只需要知道它在项目中怎么使用即可。
 
-![repo-create](https://help.github.com/assets/images/help/repository/repo-create.png)
+## Front Matter 是什么
+
+Front matter（扉页）是一个如下所示的 YAML[^YAML] 代码块，由插件[jekyll-coffeescript][9]实现。
+
+{% highlight factor linenos %}
+---
+layout: post
+title: Blogging Like a Hacker
+---
+{% endhighlight %}
+
+对于你网站项目中的每一个文件，但凡包含上述代码块的都会被 Jekyll 视为一个特殊文件进行特殊处理，其主要作用是给该文件添加各种属性。
+
+## Jekyll 的全局变量
+
+| 变量 | 描述 |
+| - | - |
+| [site][10] | `_config.yml`文件中的所有配置信息都可以通过这个变量获取。 |
+| [page][11] | 表示一个 .html 文件，该页面的特定数据和定义在其扉页中的数据都可以通过这个变量获取。 |
+| content | 该变量主要用于 layout 类型的文件。表示其他使用了某布局类型 default 的文件会把自己的内容填在 default 中的`{% raw %}{{ content }}{% endraw %}`位置。|
+| [paginator][12] | 当我们使用了分页插件以后，这个变量就可用了 |
 
 ## 后记
 
-Congratulations! 到这一步，我们就已经学会了发布网站的整个流程，至于 git 的相关内容则不在本教程的讨论范围之内，同学们需自行学习，之后如果有空，我也可能专门出一个 git 的系列教程。
+Congratulations! 到这一步，我们就基本掌握了利用 Jekyll + GitHub Pages 来搭建个人网站的所有相关知识，在之后的学习中如果碰到哪里不懂我们就可以问出有价值的问题并通过网络途经自行解决了。
 
-从下一章开始，我们将从基础知识入手，一步步学习如何润色我们的网站，并最终做出炫酷的效果。
+下一章我将把整个项目的文件夹结构剖析给大家看，让大家对整个项目有个较为清晰的认识，不再畏手畏脚。
 
 [^mixins]: 混入，就是定义一部分公共的方法或者计算属性，然后混入到各个组件中使用，方便管理与统一修改。
 [^singleton-methods]: 单例方法，即同一个方法多处引用，只保存了单个该方法的实例，而不是每引用一次便新建一个实例。
 [^renaming]: 重命名。
+[^Markdown]: [Markdown][5]是一种目前比较流行的标记语言，能使普通文本内容具有一定的格式，文件后缀通常为 .md 或 .markdown，常用来写博客。
+[^HTML]: [HTML][6]属于 web 开发的基础内容，但不属于本教程的讲解范畴，同学们务必自学，可以看看[HTML标准][7]。
+[^YAML]: YAML 不是标记语言，而是一个面向所有编程语言的数据序列化标准。
 
 [1]: https://www.ruby-lang.org/en/
 [2]: https://baike.baidu.com/item/%E6%9D%BE%E6%9C%AC%E8%A1%8C%E5%BC%98/539636?fr=aladdin
 [3]: http://rubylearning.com/satishtalim/tutorial.html
 [4]: https://guides.rubygems.org
+[5]: https://www.zybuluo.com/mdeditor
+[6]: https://baike.baidu.com/item/HTML/97049?fr=aladdin
+[7]: https://whatwg-cn.github.io/html/#toc-introduction
+[8]: https://liquid.bootcss.com/
+[9]: https://github.com/jekyll/jekyll-coffeescript
+[10]: https://jekyllrb.com/docs/variables/#site-variables
+[11]: https://jekyllrb.com/docs/variables/#page-variables
+[12]: https://jekyllrb.com/docs/variables/#paginator

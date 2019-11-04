@@ -66,7 +66,7 @@
 
 figure {
     pre {
-        padding: .5em;
+        padding: .5rem;
         border-radius: .25em;
     }
 
@@ -76,15 +76,29 @@ figure {
         font-size: 1rem;
     }
 
+    code table {
+        border: none !important;
+        margin: 0 !important;
+        th {
+            padding: 0 !important;
+        }
+
+        td {
+            padding: 0 !important;
+        }
+    }
+
     .code pre {
         margin-bottom: 0px;
         font-size: 1rem;
+        color: white;
     }
 }
 
+/* 文字背景色，类似荧光笔效果 */
 .highlighter-rouge {
     color: black;
-    background-color: #D6DDE1;
+    background-color: rgb(202, 207, 209);
     padding: 0 .25rem;
     border-radius: .25rem;
 }

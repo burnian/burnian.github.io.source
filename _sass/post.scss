@@ -1,27 +1,28 @@
-// .post table {
-//     border-top: 2px solid #777;
-//     border-bottom: 2px solid #777;
-//     margin: 8px 0;
-// }
+.post table {
+    border-top: 2px solid #777;
+    border-bottom: 2px solid #777;
+    margin: 8px 0;
 
-// .post table thead {
-//     border-bottom: 1px dashed #777;
-//     background-color: #aaa;
-//     color: #fff;
-// }
+    thead {
+        border-bottom: 1px dashed #777;
+        background-color: #aaa;
+        color: #fff;
+    }
 
-// .post table th {
-//     padding: 2px 10px;
-// }
+    th {
+        padding: 2px 10px;
+        min-width: 8rem;
+    }
 
-// .post table tr:nth-child(2n) {
-//     background-color: #E5EAED;
-// }
+    tr:nth-child(2n) {
+        background-color: rgb(234, 239, 241);
+    }
 
-// .post table td {
-//     padding: 2px 10px;
-//     vertical-align: top;
-// }
+    td {
+        padding: 2px 10px;
+        vertical-align: top;
+    }
+}
 
 /* post
  * post articles area
@@ -102,42 +103,42 @@
 //     white-space: pre;
 // }
 
-// @media screen and (min-width: 1200px) {
 
+// @media screen and (min-width: 1200px) {
 //     /**
-//       * 文章目录相关
+//       * 文章目录toc相关
 //       */
 //     .post ul#markdown-toc {
 //         display: none !important;
 //     }
 // }
 
-// @media screen and (max-width: 1199px) {
-//     .content-navigation {
-//         display: none !important;
-//     }
+@media screen and (max-width: 1199px) {
+    .content-navigation {
+        display: none !important;
+    }
 
-//     .post pre code {
-//         font-size: 85%;
-//     }
-// }
+    .post pre code {
+        font-size: 85%;
+    }
+}
 
-// @media screen and (max-width: 991px) {
-//     .post pre code {
-//         font-size: 70%;
-//     }
-// }
+@media screen and (max-width: 991px) {
+    .post pre code {
+        font-size: 70%;
+    }
+}
 
-// @media screen and (max-width: 767px) {
-//     .post header {
-//         margin-left: -10px;
-//         padding-left: 5px;
-//     }
+@media screen and (max-width: 767px) {
+    .post header {
+        margin-left: -10px;
+        padding-left: 5px;
+    }
 
-//     .post pre code {
-//         font-size: 55%;
-//     }
-// }
+    .post pre code {
+        font-size: 55%;
+    }
+}
 
 .boundary {
     border-bottom: .1875em solid #ccc
@@ -175,6 +176,6 @@
     }
 
     h4 {
-        margin: 0;
+        padding: 0 1rem;
     }
 }

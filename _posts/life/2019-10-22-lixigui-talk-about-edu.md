@@ -142,7 +142,7 @@ description: 最近看了北京十一总校校长李希贵先生关于教育的�
 
 **“终生成长，从未长大。”**
 
-![lixigui-profile](https://wx1.sinaimg.cn/mw690/6fbea8e9ly1g8kvh41gtij20sp0guq3e.jpg)
+![lixigui-profile](https://i.loli.net/2019/11/04/dBtPnZ9oJc4LgWl.jpg)
 
 ### 引用
 

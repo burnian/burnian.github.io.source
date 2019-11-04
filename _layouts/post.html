@@ -32,7 +32,6 @@ layout: default
         {% if page.previous %}
         <a class="card" href="{{ page.previous.url | prepend: site.baseurl | prepend: site.url }}">
           <h4 class="text-muted">上一篇</h4>
-          <p></p>
           <h4>{{ page.previous.title }}</h4>
         </a>
         {% else %}
@@ -47,7 +46,6 @@ layout: default
         {% if page.next %}
         <a class="card" href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">
           <h4 class="text-muted">下一篇</h4>
-          <p></p>
           <h4>{{ page.next.title }}</h4>
         </a>
         {% else %}
