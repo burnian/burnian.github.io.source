@@ -83,15 +83,15 @@
 /**
  * Blockquotes
  */
-// .post blockquote {
-//     border-left: 5px solid #D6DBDF;
-//     background: rgba(112, 138, 153, .1);
-//     font-size: 100%;
-// }
+.post blockquote {
+    border-left: 5px solid #D6DBDF;
+    background: rgba(112, 138, 153, .1);
+    font-size: 100%;
+}
 
-// .post blockquote:last-child {
-//     margin-bottom: 0;
-// }
+.post blockquote:last-child {
+    margin-bottom: 0;
+}
 
 // .post pre {
 //     overflow: auto;
