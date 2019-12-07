@@ -44,7 +44,7 @@ gitalk:
   enable: true
 
 paginate: 5
-paginate_paths: ["pages/:num", "pages/fiction/:num", "pages/travel/:num", "pages/life/:num", "pages/technology/:num", "pages/tutorial/:num"]
+paginate_paths: ["pages/:num", "pages/fiction/:num", "pages/comment/:num", "pages/life/:num", "pages/technology/:num", "pages/tutorial/:num"]
 
 # collections:
 #   posts:
