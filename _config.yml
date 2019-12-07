@@ -60,9 +60,9 @@ defaults:
     values:
       categories: "fiction"
   - scope:
-      path: "_posts/travel"
+      path: "_posts/comment"
     values:
-      categories: "travel"
+      categories: "comment"
   - scope:
       path: "_posts/life"
     values:
