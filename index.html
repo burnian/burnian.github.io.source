@@ -21,11 +21,13 @@ title: Blog
     <bcard class="card shadow" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
 
       <div class="row align-items-center justify-content-between" style="margin: 0px; height: 100%;">
-        <img class="d-none d-md-block" src={{ image }} style="border-radius: .25em; max-height: 188px; max-width: 200px;">
+        <div class="col-md-4 d-none d-md-block" style="padding: 0px; height: 100%;">
+          <img src={{ image }} style="border-radius: .25em; height: 100%; max-width: 200px;">
+        </div>
 
-        <div class="col-md-8" style="height: 100%;">
+        <div class="col-md-8" style="padding: 5px; height: 100%;">
 
-          <div class="row" style="height: 100%;">
+          <div class="row" style="margin: 0px; width: 100%; height: 100%;">
             {% if post.title.size > titleTrunc %}
             <h3 class="col-12 intimate bfontsize-xs">{{ post.title }}</h3>
             {% else %}
