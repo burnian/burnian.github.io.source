@@ -7,8 +7,6 @@ description: 这一章我们将展开学习利用 Jekyll + GitHub Pages 搭建�
 * TOC
 {:toc}
 
-## 楔子
-
 这一章我们将展开学习利用 Jekyll + GitHub Pages 搭建个人网站时会频繁用到的相关知识。
 
 ## Ruby 是什么

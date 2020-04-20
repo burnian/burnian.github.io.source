@@ -52,6 +52,7 @@ paginate_paths: ["pages/:num", "pages/fiction/:num", "pages/comment/:num", "page
 
 defaults:
   - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
